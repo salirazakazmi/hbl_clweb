@@ -1,0 +1,1310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FFC71A2-9DEC-4C07-8FB2-B9CC30110C19}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebDataEntry</RootNamespace>
+    <AssemblyName>WebDataEntry</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Administration, Version=7.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CLDashboardbySegment.aspx" />
+    <Content Include="Deleted\Gmap1.aspx" />
+    <Content Include="Email\EmailTemplate_PEP_A11.htm" />
+    <Content Include="Email\EmailTemplate_PEP_A1.htm" />
+    <Content Include="Email\EmailTemplate_PEP_B2.htm" />
+    <Content Include="Email\EmailTemplate_PEP_A2.htm" />
+    <Content Include="Email\EmailTemplate_PEP_R2.htm" />
+    <Content Include="Email\EmailTemplate_PEP_R1.htm" />
+    <Content Include="Email\EmailTemplate.htm" />
+    <Content Include="ExcelAnnexure201912001.aspx" />
+    <Content Include="KYC_HR_PR.aspx" />
+    <Content Include="Deleted\PEPMISDashboard .aspx" />
+    <Content Include="CLBackupData.aspx" />
+    <Content Include="Upl_RN10641.aspx" />
+    <Content Include="Upl_CLCompileFiles.aspx" />
+    <Content Include="Upl_RN10698.aspx" />
+    <Content Include="PEPMIS_RN10698.aspx" />
+    <Content Include="assets_th1\css\font-awesome.min.css" />
+    <Content Include="assets_th1\css\material-dashboard-rtl.css" />
+    <Content Include="assets_th1\css\material-dashboard.css" />
+    <Content Include="assets_th1\css\material-dashboard.min.css" />
+    <Content Include="assets_th1\css\micon.css" />
+    <Content Include="assets_th1\demo\demo.css" />
+    <Content Include="assets_th1\demo\demo.js" />
+    <Content Include="assets_th1\img\angular.png" />
+    <Content Include="assets_th1\img\apple-icon.png" />
+    <Content Include="assets_th1\img\cover.jpg" />
+    <Content Include="assets_th1\img\ex1.png" />
+    <Content Include="assets_th1\img\ex2.png" />
+    <Content Include="assets_th1\img\ex3.png" />
+    <Content Include="assets_th1\img\faces\avatar.jpg" />
+    <Content Include="assets_th1\img\faces\card-profile1-square.jpg" />
+    <Content Include="assets_th1\img\faces\card-profile2-square.jpg" />
+    <Content Include="assets_th1\img\faces\marc.jpg" />
+    <Content Include="assets_th1\img\favicon.png" />
+    <Content Include="assets_th1\img\html.png" />
+    <Content Include="assets_th1\img\imac1.png" />
+    <Content Include="assets_th1\img\ipad.png" />
+    <Content Include="assets_th1\img\iPad2.png" />
+    <Content Include="assets_th1\img\iphonex.png" />
+    <Content Include="assets_th1\img\Macbook.png" />
+    <Content Include="assets_th1\img\mask.png" />
+    <Content Include="assets_th1\img\new_logo.png" />
+    <Content Include="assets_th1\img\notification.png" />
+    <Content Include="assets_th1\img\react.png" />
+    <Content Include="assets_th1\img\sidebar-1.jpg" />
+    <Content Include="assets_th1\img\sidebar-2.jpg" />
+    <Content Include="assets_th1\img\sidebar-3.jpg" />
+    <Content Include="assets_th1\img\sidebar-4.jpg" />
+    <Content Include="assets_th1\img\table.png" />
+    <Content Include="assets_th1\img\vue.png" />
+    <Content Include="assets_th1\js\core\bootstrap-material-design.min.js" />
+    <Content Include="assets_th1\js\core\jquery.min.js" />
+    <Content Include="assets_th1\js\core\popper.min.js" />
+    <Content Include="assets_th1\js\material-dashboard.js" />
+    <Content Include="assets_th1\js\material-dashboard.min.js" />
+    <Content Include="assets_th1\js\plugins\arrive.min.js" />
+    <Content Include="assets_th1\js\plugins\bootstrap-datetimepicker.min.js" />
+    <Content Include="assets_th1\js\plugins\bootstrap-notify.js" />
+    <Content Include="assets_th1\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="assets_th1\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="assets_th1\js\plugins\chartist.min.js" />
+    <Content Include="assets_th1\js\plugins\fullcalendar.min.js" />
+    <Content Include="assets_th1\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="assets_th1\js\plugins\jquery-jvectormap.js" />
+    <Content Include="assets_th1\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="assets_th1\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="assets_th1\js\plugins\jquery.tagsinput.js" />
+    <Content Include="assets_th1\js\plugins\jquery.validate.min.js" />
+    <Content Include="assets_th1\js\plugins\moment.min.js" />
+    <Content Include="assets_th1\js\plugins\nouislider.min.js" />
+    <Content Include="assets_th1\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="assets_th1\js\plugins\sweetalert2.js" />
+    <Content Include="BCUWebService.asmx" />
+    <Content Include="bootstrap4\css\bootstrap-grid.css" />
+    <Content Include="bootstrap4\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap4\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap4\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap4\css\bootstrap.css" />
+    <Content Include="bootstrap4\css\bootstrap.min.css" />
+    <Content Include="bootstrap4\css\sbadmin\css.css" />
+    <Content Include="bootstrap4\css\sbadmin\sb-admin-2.css" />
+    <Content Include="bootstrap4\css\sbadmin\sb-admin-2.min.css" />
+    <Content Include="bootstrap4\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap4\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap4\js\bootstrap.js" />
+    <Content Include="bootstrap4\js\bootstrap.min.js" />
+    <Content Include="bootstrap4\js\popper.min.js" />
+    <Content Include="Chart.js" />
+    <Content Include="CLDashboardBranch.aspx" />
+    <Content Include="CLDashboardArea.aspx" />
+    <Content Include="CLDashboardSAM.aspx" />
+    <Content Include="CLDashboardRegion.aspx" />
+    <Content Include="CLDashboard.aspx" />
+    <Content Include="CLOtherCharts.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap.min.js" />
+    <Content Include="css\jquery.min.js" />
+    <Content Include="css\multiple-select.css" />
+    <Content Include="css\multiple-select.js" />
+    <Content Include="Deleted\CLDashboardbk.aspx" />
+    <Content Include="Deleted\CLDashboard2.aspx" />
+    <Content Include="DataTableBootstrap.aspx" />
+    <Content Include="Deleted\ClientIp.aspx" />
+    <Content Include="Deleted\ExcelFileUpload.aspx" />
+    <Content Include="Deleted\ExcelRead.aspx" />
+    <Content Include="Deleted\HighchartDemo - Copy.aspx" />
+    <Content Include="Deleted\CLKPISegment.aspx" />
+    <Content Include="Deleted\multiselect.aspx" />
+    <Content Include="highchart\css\annotations\popup.css" />
+    <Content Include="highchart\css\highcharts.css" />
+    <Content Include="highchart\css\stocktools\gui.css" />
+    <Content Include="highchart\css\themes\dark-unica.css" />
+    <Content Include="highchart\css\themes\grid-light.css" />
+    <Content Include="highchart\css\themes\sand-signika.css" />
+    <Content Include="highchart\es-modules\annotations\annotations.src.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\ControllableCircle.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\ControllableImage.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\ControllableLabel.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\controllableMixin.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\ControllablePath.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\ControllableRect.js" />
+    <Content Include="highchart\es-modules\annotations\controllable\markerMixin.js" />
+    <Content Include="highchart\es-modules\annotations\ControlPoint.js" />
+    <Content Include="highchart\es-modules\annotations\eventEmitterMixin.js" />
+    <Content Include="highchart\es-modules\annotations\MockPoint.js" />
+    <Content Include="highchart\es-modules\annotations\navigationBindings.js" />
+    <Content Include="highchart\es-modules\annotations\popup.js" />
+    <Content Include="highchart\es-modules\annotations\types\CrookedLine.js" />
+    <Content Include="highchart\es-modules\annotations\types\ElliottWave.js" />
+    <Content Include="highchart\es-modules\annotations\types\Fibonacci.js" />
+    <Content Include="highchart\es-modules\annotations\types\InfinityLine.js" />
+    <Content Include="highchart\es-modules\annotations\types\Measure.js" />
+    <Content Include="highchart\es-modules\annotations\types\Pitchfork.js" />
+    <Content Include="highchart\es-modules\annotations\types\Tunnel.js" />
+    <Content Include="highchart\es-modules\annotations\types\VerticalLine.js" />
+    <Content Include="highchart\es-modules\error-messages.js" />
+    <Content Include="highchart\es-modules\error.js" />
+    <Content Include="highchart\es-modules\masters\highcharts-3d.src.js" />
+    <Content Include="highchart\es-modules\masters\highcharts-more.src.js" />
+    <Content Include="highchart\es-modules\masters\highcharts.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\accessibility.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\annotations-advanced.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\annotations.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\arrow-symbols.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\boost-canvas.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\boost.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\broken-axis.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\bullet.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\current-date-indicator.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\cylinder.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\data.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\datagrouping.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\debugger.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\dependency-wheel.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\dotplot.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\drag-panes.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\draggable-points.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\drilldown.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\export-data.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\exporting.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\full-screen.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\funnel.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\funnel3d.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\gantt.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\grid-axis.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\heatmap.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\histogram-bellcurve.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\item-series.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\networkgraph.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\no-data-to-display.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\offline-exporting.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\oldie-polyfills.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\oldie.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\organization.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\overlapping-datalabels.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\parallel-coordinates.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\pareto.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\pathfinder.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\pattern-fill.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\price-indicator.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\pyramid3d.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\sankey.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\series-label.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\solid-gauge.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\sonification.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\static-scale.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\stock-tools.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\stock.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\streamgraph.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\sunburst.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\tilemap.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\timeline.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\treegrid.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\treemap.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\variable-pie.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\variwide.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\vector.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\venn.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\windbarb.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\wordcloud.src.js" />
+    <Content Include="highchart\es-modules\masters\modules\xrange.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\avocado.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\dark-blue.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\dark-green.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\dark-unica.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\gray.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\grid-light.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\grid.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\sand-signika.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\skies.src.js" />
+    <Content Include="highchart\es-modules\masters\themes\sunset.src.js" />
+    <Content Include="highchart\es-modules\mixins\ajax.js" />
+    <Content Include="highchart\es-modules\mixins\centered-series.js" />
+    <Content Include="highchart\es-modules\mixins\derived-series.js" />
+    <Content Include="highchart\es-modules\mixins\download-url.js" />
+    <Content Include="highchart\es-modules\mixins\draw-point.js" />
+    <Content Include="highchart\es-modules\mixins\geometry-circles.js" />
+    <Content Include="highchart\es-modules\mixins\geometry.js" />
+    <Content Include="highchart\es-modules\mixins\indicator-required.js" />
+    <Content Include="highchart\es-modules\mixins\multipe-lines.js" />
+    <Content Include="highchart\es-modules\mixins\navigation.js" />
+    <Content Include="highchart\es-modules\mixins\nelder-mead.js" />
+    <Content Include="highchart\es-modules\mixins\nodes.js" />
+    <Content Include="highchart\es-modules\mixins\on-series.js" />
+    <Content Include="highchart\es-modules\mixins\polygon.js" />
+    <Content Include="highchart\es-modules\mixins\reduce-array.js" />
+    <Content Include="highchart\es-modules\mixins\tree-series.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\a11y-i18n.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\accessibility.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\AccessibilityComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\ContainerComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\InfoRegionComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\LegendComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\MenuComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\RangeSelectorComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\SeriesComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\components\ZoomComponent.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\high-contrast-mode.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\high-contrast-theme.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\KeyboardNavigation.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\KeyboardNavigationHandler.js" />
+    <Content Include="highchart\es-modules\modules\accessibility\options.js" />
+    <Content Include="highchart\es-modules\modules\bellcurve.src.js" />
+    <Content Include="highchart\es-modules\modules\boost-canvas.src.js" />
+    <Content Include="highchart\es-modules\modules\boost\boost-attach.js" />
+    <Content Include="highchart\es-modules\modules\boost\boost-init.js" />
+    <Content Include="highchart\es-modules\modules\boost\boost-options.js" />
+    <Content Include="highchart\es-modules\modules\boost\boost-overrides.js" />
+    <Content Include="highchart\es-modules\modules\boost\boost-utils.js" />
+    <Content Include="highchart\es-modules\modules\boost\boost.js" />
+    <Content Include="highchart\es-modules\modules\boost\boostable-map.js" />
+    <Content Include="highchart\es-modules\modules\boost\boostables.js" />
+    <Content Include="highchart\es-modules\modules\boost\named-colors.js" />
+    <Content Include="highchart\es-modules\modules\boost\wgl-renderer.js" />
+    <Content Include="highchart\es-modules\modules\boost\wgl-shader.js" />
+    <Content Include="highchart\es-modules\modules\boost\wgl-vbuffer.js" />
+    <Content Include="highchart\es-modules\modules\broken-axis.src.js" />
+    <Content Include="highchart\es-modules\modules\bullet.src.js" />
+    <Content Include="highchart\es-modules\modules\cylinder.src.js" />
+    <Content Include="highchart\es-modules\modules\data.src.js" />
+    <Content Include="highchart\es-modules\modules\debugger.src.js" />
+    <Content Include="highchart\es-modules\modules\dependency-wheel.src.js" />
+    <Content Include="highchart\es-modules\modules\dotplot.src.js" />
+    <Content Include="highchart\es-modules\modules\drag-panes.src.js" />
+    <Content Include="highchart\es-modules\modules\draggable-points.src.js" />
+    <Content Include="highchart\es-modules\modules\drilldown.src.js" />
+    <Content Include="highchart\es-modules\modules\export-data.src.js" />
+    <Content Include="highchart\es-modules\modules\exporting.src.js" />
+    <Content Include="highchart\es-modules\modules\full-screen.src.js" />
+    <Content Include="highchart\es-modules\modules\funnel.src.js" />
+    <Content Include="highchart\es-modules\modules\funnel3d.src.js" />
+    <Content Include="highchart\es-modules\modules\histogram.src.js" />
+    <Content Include="highchart\es-modules\modules\item-series.src.js" />
+    <Content Include="highchart\es-modules\modules\networkgraph\draggable-nodes.js" />
+    <Content Include="highchart\es-modules\modules\networkgraph\integrations.js" />
+    <Content Include="highchart\es-modules\modules\networkgraph\layouts.js" />
+    <Content Include="highchart\es-modules\modules\networkgraph\networkgraph.src.js" />
+    <Content Include="highchart\es-modules\modules\networkgraph\QuadTree.js" />
+    <Content Include="highchart\es-modules\modules\no-data-to-display.src.js" />
+    <Content Include="highchart\es-modules\modules\offline-exporting.src.js" />
+    <Content Include="highchart\es-modules\modules\oldie-polyfills.src.js" />
+    <Content Include="highchart\es-modules\modules\oldie.src.js" />
+    <Content Include="highchart\es-modules\modules\organization.src.js" />
+    <Content Include="highchart\es-modules\modules\overlapping-datalabels.src.js" />
+    <Content Include="highchart\es-modules\modules\parallel-coordinates.src.js" />
+    <Content Include="highchart\es-modules\modules\pareto.src.js" />
+    <Content Include="highchart\es-modules\modules\pattern-fill.src.js" />
+    <Content Include="highchart\es-modules\modules\price-indicator.src.js" />
+    <Content Include="highchart\es-modules\modules\pyramid3d.src.js" />
+    <Content Include="highchart\es-modules\modules\sankey.src.js" />
+    <Content Include="highchart\es-modules\modules\series-label.src.js" />
+    <Content Include="highchart\es-modules\modules\solid-gauge.src.js" />
+    <Content Include="highchart\es-modules\modules\sonification\chartSonify.js" />
+    <Content Include="highchart\es-modules\modules\sonification\Earcon.js" />
+    <Content Include="highchart\es-modules\modules\sonification\Instrument.js" />
+    <Content Include="highchart\es-modules\modules\sonification\instrumentDefinitions.js" />
+    <Content Include="highchart\es-modules\modules\sonification\musicalFrequencies.js" />
+    <Content Include="highchart\es-modules\modules\sonification\pointSonify.js" />
+    <Content Include="highchart\es-modules\modules\sonification\sonification.js" />
+    <Content Include="highchart\es-modules\modules\sonification\Timeline.js" />
+    <Content Include="highchart\es-modules\modules\sonification\utilities.js" />
+    <Content Include="highchart\es-modules\modules\static-scale.src.js" />
+    <Content Include="highchart\es-modules\modules\stock-tools-bindings.js" />
+    <Content Include="highchart\es-modules\modules\stock-tools-gui.js" />
+    <Content Include="highchart\es-modules\modules\streamgraph.src.js" />
+    <Content Include="highchart\es-modules\modules\sunburst.src.js" />
+    <Content Include="highchart\es-modules\modules\tilemap.src.js" />
+    <Content Include="highchart\es-modules\modules\timeline.src.js" />
+    <Content Include="highchart\es-modules\modules\treemap.src.js" />
+    <Content Include="highchart\es-modules\modules\variable-pie.src.js" />
+    <Content Include="highchart\es-modules\modules\variwide.src.js" />
+    <Content Include="highchart\es-modules\modules\vector.src.js" />
+    <Content Include="highchart\es-modules\modules\venn.src.js" />
+    <Content Include="highchart\es-modules\modules\windbarb.src.js" />
+    <Content Include="highchart\es-modules\modules\wordcloud.src.js" />
+    <Content Include="highchart\es-modules\modules\xrange.src.js" />
+    <Content Include="highchart\es-modules\parts-3d\Axis.js" />
+    <Content Include="highchart\es-modules\parts-3d\Chart.js" />
+    <Content Include="highchart\es-modules\parts-3d\Column.js" />
+    <Content Include="highchart\es-modules\parts-3d\Math.js" />
+    <Content Include="highchart\es-modules\parts-3d\Pie.js" />
+    <Content Include="highchart\es-modules\parts-3d\Scatter.js" />
+    <Content Include="highchart\es-modules\parts-3d\Series.js" />
+    <Content Include="highchart\es-modules\parts-3d\SVGRenderer.js" />
+    <Content Include="highchart\es-modules\parts-3d\VMLRenderer.js" />
+    <Content Include="highchart\es-modules\parts-gantt\ArrowSymbols.js" />
+    <Content Include="highchart\es-modules\parts-gantt\CurrentDateIndicator.js" />
+    <Content Include="highchart\es-modules\parts-gantt\GanttChart.js" />
+    <Content Include="highchart\es-modules\parts-gantt\GanttSeries.js" />
+    <Content Include="highchart\es-modules\parts-gantt\GridAxis.js" />
+    <Content Include="highchart\es-modules\parts-gantt\Pathfinder.js" />
+    <Content Include="highchart\es-modules\parts-gantt\PathfinderAlgorithms.js" />
+    <Content Include="highchart\es-modules\parts-gantt\Tree.js" />
+    <Content Include="highchart\es-modules\parts-gantt\TreeGrid.js" />
+    <Content Include="highchart\es-modules\parts-map\ColorAxis.js" />
+    <Content Include="highchart\es-modules\parts-map\ColorSeriesMixin.js" />
+    <Content Include="highchart\es-modules\parts-map\GeoJSON.js" />
+    <Content Include="highchart\es-modules\parts-map\HeatmapSeries.js" />
+    <Content Include="highchart\es-modules\parts-map\Map.js" />
+    <Content Include="highchart\es-modules\parts-map\MapAxis.js" />
+    <Content Include="highchart\es-modules\parts-map\MapBubbleSeries.js" />
+    <Content Include="highchart\es-modules\parts-map\MapLineSeries.js" />
+    <Content Include="highchart\es-modules\parts-map\MapNavigation.js" />
+    <Content Include="highchart\es-modules\parts-map\MapPointer.js" />
+    <Content Include="highchart\es-modules\parts-map\MapPointSeries.js" />
+    <Content Include="highchart\es-modules\parts-map\MapSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\AreaRangeSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\AreaSplineRangeSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\BoxPlotSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\BubbleLegend.js" />
+    <Content Include="highchart\es-modules\parts-more\BubbleSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\ColumnPyramidSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\ColumnRangeSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\ErrorBarSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\GaugeSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\PackedBubbleSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\Pane.js" />
+    <Content Include="highchart\es-modules\parts-more\Polar.js" />
+    <Content Include="highchart\es-modules\parts-more\PolygonSeries.js" />
+    <Content Include="highchart\es-modules\parts-more\RadialAxis.js" />
+    <Content Include="highchart\es-modules\parts-more\WaterfallSeries.js" />
+    <Content Include="highchart\es-modules\parts.js" />
+    <Content Include="highchart\es-modules\parts\AreaSeries.js" />
+    <Content Include="highchart\es-modules\parts\AreaSplineSeries.js" />
+    <Content Include="highchart\es-modules\parts\Axis.js" />
+    <Content Include="highchart\es-modules\parts\BarSeries.js" />
+    <Content Include="highchart\es-modules\parts\CandlestickSeries.js" />
+    <Content Include="highchart\es-modules\parts\Chart.js" />
+    <Content Include="highchart\es-modules\parts\Color.js" />
+    <Content Include="highchart\es-modules\parts\ColumnSeries.js" />
+    <Content Include="highchart\es-modules\parts\DataGrouping.js" />
+    <Content Include="highchart\es-modules\parts\DataLabels.js" />
+    <Content Include="highchart\es-modules\parts\DateTimeAxis.js" />
+    <Content Include="highchart\es-modules\parts\Dynamics.js" />
+    <Content Include="highchart\es-modules\parts\FlagsSeries.js" />
+    <Content Include="highchart\es-modules\parts\Globals.js" />
+    <Content Include="highchart\es-modules\parts\Html.js" />
+    <Content Include="highchart\es-modules\parts\Interaction.js" />
+    <Content Include="highchart\es-modules\parts\Legend.js" />
+    <Content Include="highchart\es-modules\parts\LogarithmicAxis.js" />
+    <Content Include="highchart\es-modules\parts\MSPointer.js" />
+    <Content Include="highchart\es-modules\parts\Navigator.js" />
+    <Content Include="highchart\es-modules\parts\OHLCSeries.js" />
+    <Content Include="highchart\es-modules\parts\Options.js" />
+    <Content Include="highchart\es-modules\parts\OrdinalAxis.js" />
+    <Content Include="highchart\es-modules\parts\PieSeries.js" />
+    <Content Include="highchart\es-modules\parts\PlotLineOrBand.js" />
+    <Content Include="highchart\es-modules\parts\Point.js" />
+    <Content Include="highchart\es-modules\parts\Pointer.js" />
+    <Content Include="highchart\es-modules\parts\RangeSelector.js" />
+    <Content Include="highchart\es-modules\parts\Responsive.js" />
+    <Content Include="highchart\es-modules\parts\ScatterSeries.js" />
+    <Content Include="highchart\es-modules\parts\ScrollablePlotArea.js" />
+    <Content Include="highchart\es-modules\parts\Scrollbar.js" />
+    <Content Include="highchart\es-modules\parts\Series.js" />
+    <Content Include="highchart\es-modules\parts\SplineSeries.js" />
+    <Content Include="highchart\es-modules\parts\Stacking.js" />
+    <Content Include="highchart\es-modules\parts\StockChart.js" />
+    <Content Include="highchart\es-modules\parts\SvgRenderer.js" />
+    <Content Include="highchart\es-modules\parts\Tick.js" />
+    <Content Include="highchart\es-modules\parts\Time.js" />
+    <Content Include="highchart\es-modules\parts\Tooltip.js" />
+    <Content Include="highchart\es-modules\parts\TouchPointer.js" />
+    <Content Include="highchart\es-modules\parts\Utilities.js" />
+    <Content Include="highchart\es-modules\themes\avocado.js" />
+    <Content Include="highchart\es-modules\themes\dark-blue.js" />
+    <Content Include="highchart\es-modules\themes\dark-green.js" />
+    <Content Include="highchart\es-modules\themes\dark-unica.js" />
+    <Content Include="highchart\es-modules\themes\gray.js" />
+    <Content Include="highchart\es-modules\themes\grid-light.js" />
+    <Content Include="highchart\es-modules\themes\grid.js" />
+    <Content Include="highchart\es-modules\themes\sand-signika.js" />
+    <Content Include="highchart\es-modules\themes\skies.js" />
+    <Content Include="highchart\es-modules\themes\sunset.js" />
+    <Content Include="highchart\highcharts-3d.js" />
+    <Content Include="highchart\highcharts-3d.src.js" />
+    <Content Include="highchart\highcharts-more.js" />
+    <Content Include="highchart\highcharts-more.src.js" />
+    <Content Include="highchart\highcharts.js" />
+    <Content Include="highchart\highcharts.src.js" />
+    <Content Include="highchart\lib\canvg.js" />
+    <Content Include="highchart\lib\canvg.src.js" />
+    <Content Include="highchart\lib\jspdf.js" />
+    <Content Include="highchart\lib\jspdf.src.js" />
+    <Content Include="highchart\lib\rgbcolor.js" />
+    <Content Include="highchart\lib\rgbcolor.src.js" />
+    <Content Include="highchart\lib\svg2pdf.js" />
+    <Content Include="highchart\lib\svg2pdf.src.js" />
+    <Content Include="highchart\modules\accessibility.js" />
+    <Content Include="highchart\modules\accessibility.src.js" />
+    <Content Include="highchart\modules\annotations-advanced.js" />
+    <Content Include="highchart\modules\annotations-advanced.src.js" />
+    <Content Include="highchart\modules\annotations.js" />
+    <Content Include="highchart\modules\annotations.src.js" />
+    <Content Include="highchart\modules\arrow-symbols.js" />
+    <Content Include="highchart\modules\arrow-symbols.src.js" />
+    <Content Include="highchart\modules\boost-canvas.js" />
+    <Content Include="highchart\modules\boost-canvas.src.js" />
+    <Content Include="highchart\modules\boost.js" />
+    <Content Include="highchart\modules\boost.src.js" />
+    <Content Include="highchart\modules\broken-axis.js" />
+    <Content Include="highchart\modules\broken-axis.src.js" />
+    <Content Include="highchart\modules\bullet.js" />
+    <Content Include="highchart\modules\bullet.src.js" />
+    <Content Include="highchart\modules\current-date-indicator.js" />
+    <Content Include="highchart\modules\current-date-indicator.src.js" />
+    <Content Include="highchart\modules\cylinder.js" />
+    <Content Include="highchart\modules\cylinder.src.js" />
+    <Content Include="highchart\modules\data.js" />
+    <Content Include="highchart\modules\data.src.js" />
+    <Content Include="highchart\modules\datagrouping.js" />
+    <Content Include="highchart\modules\datagrouping.src.js" />
+    <Content Include="highchart\modules\debugger.js" />
+    <Content Include="highchart\modules\debugger.src.js" />
+    <Content Include="highchart\modules\dependency-wheel.js" />
+    <Content Include="highchart\modules\dependency-wheel.src.js" />
+    <Content Include="highchart\modules\dotplot.js" />
+    <Content Include="highchart\modules\dotplot.src.js" />
+    <Content Include="highchart\modules\drag-panes.js" />
+    <Content Include="highchart\modules\drag-panes.src.js" />
+    <Content Include="highchart\modules\draggable-points.js" />
+    <Content Include="highchart\modules\draggable-points.src.js" />
+    <Content Include="highchart\modules\drilldown.js" />
+    <Content Include="highchart\modules\drilldown.src.js" />
+    <Content Include="highchart\modules\export-data.js" />
+    <Content Include="highchart\modules\export-data.src.js" />
+    <Content Include="highchart\modules\exporting.js" />
+    <Content Include="highchart\modules\exporting.src.js" />
+    <Content Include="highchart\modules\full-screen.js" />
+    <Content Include="highchart\modules\full-screen.src.js" />
+    <Content Include="highchart\modules\funnel.js" />
+    <Content Include="highchart\modules\funnel.src.js" />
+    <Content Include="highchart\modules\funnel3d.js" />
+    <Content Include="highchart\modules\funnel3d.src.js" />
+    <Content Include="highchart\modules\gantt.js" />
+    <Content Include="highchart\modules\gantt.src.js" />
+    <Content Include="highchart\modules\grid-axis.js" />
+    <Content Include="highchart\modules\grid-axis.src.js" />
+    <Content Include="highchart\modules\heatmap.js" />
+    <Content Include="highchart\modules\heatmap.src.js" />
+    <Content Include="highchart\modules\histogram-bellcurve.js" />
+    <Content Include="highchart\modules\histogram-bellcurve.src.js" />
+    <Content Include="highchart\modules\item-series.js" />
+    <Content Include="highchart\modules\item-series.src.js" />
+    <Content Include="highchart\modules\networkgraph.js" />
+    <Content Include="highchart\modules\networkgraph.src.js" />
+    <Content Include="highchart\modules\no-data-to-display.js" />
+    <Content Include="highchart\modules\no-data-to-display.src.js" />
+    <Content Include="highchart\modules\offline-exporting.js" />
+    <Content Include="highchart\modules\offline-exporting.src.js" />
+    <Content Include="highchart\modules\oldie-polyfills.js" />
+    <Content Include="highchart\modules\oldie-polyfills.src.js" />
+    <Content Include="highchart\modules\oldie.js" />
+    <Content Include="highchart\modules\oldie.src.js" />
+    <Content Include="highchart\modules\organization.js" />
+    <Content Include="highchart\modules\organization.src.js" />
+    <Content Include="highchart\modules\overlapping-datalabels.js" />
+    <Content Include="highchart\modules\overlapping-datalabels.src.js" />
+    <Content Include="highchart\modules\parallel-coordinates.js" />
+    <Content Include="highchart\modules\parallel-coordinates.src.js" />
+    <Content Include="highchart\modules\pareto.js" />
+    <Content Include="highchart\modules\pareto.src.js" />
+    <Content Include="highchart\modules\pathfinder.js" />
+    <Content Include="highchart\modules\pathfinder.src.js" />
+    <Content Include="highchart\modules\pattern-fill.js" />
+    <Content Include="highchart\modules\pattern-fill.src.js" />
+    <Content Include="highchart\modules\price-indicator.js" />
+    <Content Include="highchart\modules\price-indicator.src.js" />
+    <Content Include="highchart\modules\pyramid3d.js" />
+    <Content Include="highchart\modules\pyramid3d.src.js" />
+    <Content Include="highchart\modules\sankey.js" />
+    <Content Include="highchart\modules\sankey.src.js" />
+    <Content Include="highchart\modules\series-label.js" />
+    <Content Include="highchart\modules\series-label.src.js" />
+    <Content Include="highchart\modules\solid-gauge.js" />
+    <Content Include="highchart\modules\solid-gauge.src.js" />
+    <Content Include="highchart\modules\sonification.js" />
+    <Content Include="highchart\modules\sonification.src.js" />
+    <Content Include="highchart\modules\static-scale.js" />
+    <Content Include="highchart\modules\static-scale.src.js" />
+    <Content Include="highchart\modules\stock-tools.js" />
+    <Content Include="highchart\modules\stock-tools.src.js" />
+    <Content Include="highchart\modules\stock.js" />
+    <Content Include="highchart\modules\stock.src.js" />
+    <Content Include="highchart\modules\streamgraph.js" />
+    <Content Include="highchart\modules\streamgraph.src.js" />
+    <Content Include="highchart\modules\sunburst.js" />
+    <Content Include="highchart\modules\sunburst.src.js" />
+    <Content Include="highchart\modules\tilemap.js" />
+    <Content Include="highchart\modules\tilemap.src.js" />
+    <Content Include="highchart\modules\timeline.js" />
+    <Content Include="highchart\modules\timeline.src.js" />
+    <Content Include="highchart\modules\treegrid.js" />
+    <Content Include="highchart\modules\treegrid.src.js" />
+    <Content Include="highchart\modules\treemap.js" />
+    <Content Include="highchart\modules\treemap.src.js" />
+    <Content Include="highchart\modules\variable-pie.js" />
+    <Content Include="highchart\modules\variable-pie.src.js" />
+    <Content Include="highchart\modules\variwide.js" />
+    <Content Include="highchart\modules\variwide.src.js" />
+    <Content Include="highchart\modules\vector.js" />
+    <Content Include="highchart\modules\vector.src.js" />
+    <Content Include="highchart\modules\venn.js" />
+    <Content Include="highchart\modules\venn.src.js" />
+    <Content Include="highchart\modules\windbarb.js" />
+    <Content Include="highchart\modules\windbarb.src.js" />
+    <Content Include="highchart\modules\wordcloud.js" />
+    <Content Include="highchart\modules\wordcloud.src.js" />
+    <Content Include="highchart\modules\xrange.js" />
+    <Content Include="highchart\modules\xrange.src.js" />
+    <Content Include="highchart\themes\avocado.js" />
+    <Content Include="highchart\themes\avocado.src.js" />
+    <Content Include="highchart\themes\dark-blue.js" />
+    <Content Include="highchart\themes\dark-blue.src.js" />
+    <Content Include="highchart\themes\dark-green.js" />
+    <Content Include="highchart\themes\dark-green.src.js" />
+    <Content Include="highchart\themes\dark-unica.js" />
+    <Content Include="highchart\themes\dark-unica.src.js" />
+    <Content Include="highchart\themes\gray.js" />
+    <Content Include="highchart\themes\gray.src.js" />
+    <Content Include="highchart\themes\grid-light.js" />
+    <Content Include="highchart\themes\grid-light.src.js" />
+    <Content Include="highchart\themes\grid.js" />
+    <Content Include="highchart\themes\grid.src.js" />
+    <Content Include="highchart\themes\sand-signika.js" />
+    <Content Include="highchart\themes\sand-signika.src.js" />
+    <Content Include="highchart\themes\skies.js" />
+    <Content Include="highchart\themes\skies.src.js" />
+    <Content Include="highchart\themes\sunset.js" />
+    <Content Include="highchart\themes\sunset.src.js" />
+    <Content Include="Images\hbl-logo-white-bk.png" />
+    <Content Include="PEP_Case_Report.aspx" />
+    <Content Include="content\css\bootstrap.min.css" />
+    <Content Include="content\js\bootstrap.bundle.min.js" />
+    <Content Include="content\js\bootstrap.min.js" />
+    <Content Include="Images\hbllogo.jpg" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Deleted\Loginold.aspx" />
+    <Content Include="PEP_Annexure23Summary.aspx" />
+    <Content Include="PEP_Annexure23.aspx" />
+    <Content Include="ELearningTraining.aspx" />
+    <Content Include="ClassTraining.aspx" />
+    <Content Include="Alerts.aspx" />
+    <Content Include="CL_100Depositor.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="MasterPage_DE.Master" />
+    <Content Include="highchart\css\annotations\popup.scss" />
+    <Content Include="highchart\css\highcharts.scss" />
+    <Content Include="highchart\css\stocktools\gui.scss" />
+    <Content Include="highchart\css\themes\dark-unica.scss" />
+    <Content Include="highchart\css\themes\grid-light.scss" />
+    <Content Include="highchart\css\themes\sand-signika.scss" />
+    <Content Include="highchart\highcharts-3d.js.map" />
+    <Content Include="highchart\highcharts-more.js.map" />
+    <Content Include="highchart\highcharts.js.map" />
+    <Content Include="highchart\modules\accessibility.js.map" />
+    <Content Include="highchart\modules\annotations-advanced.js.map" />
+    <Content Include="highchart\modules\annotations.js.map" />
+    <Content Include="highchart\modules\arrow-symbols.js.map" />
+    <Content Include="highchart\modules\boost-canvas.js.map" />
+    <Content Include="highchart\modules\boost.js.map" />
+    <Content Include="highchart\modules\broken-axis.js.map" />
+    <Content Include="highchart\modules\bullet.js.map" />
+    <Content Include="highchart\modules\current-date-indicator.js.map" />
+    <Content Include="highchart\modules\cylinder.js.map" />
+    <Content Include="highchart\modules\data.js.map" />
+    <Content Include="highchart\modules\datagrouping.js.map" />
+    <Content Include="highchart\modules\debugger.js.map" />
+    <Content Include="highchart\modules\dependency-wheel.js.map" />
+    <Content Include="highchart\modules\dotplot.js.map" />
+    <Content Include="highchart\modules\drag-panes.js.map" />
+    <Content Include="highchart\modules\draggable-points.js.map" />
+    <Content Include="highchart\modules\drilldown.js.map" />
+    <Content Include="highchart\modules\export-data.js.map" />
+    <Content Include="highchart\modules\exporting.js.map" />
+    <Content Include="highchart\modules\full-screen.js.map" />
+    <Content Include="highchart\modules\funnel.js.map" />
+    <Content Include="highchart\modules\funnel3d.js.map" />
+    <Content Include="highchart\modules\gantt.js.map" />
+    <Content Include="highchart\modules\grid-axis.js.map" />
+    <Content Include="highchart\modules\heatmap.js.map" />
+    <Content Include="highchart\modules\histogram-bellcurve.js.map" />
+    <Content Include="highchart\modules\item-series.js.map" />
+    <Content Include="highchart\modules\networkgraph.js.map" />
+    <Content Include="highchart\modules\no-data-to-display.js.map" />
+    <Content Include="highchart\modules\offline-exporting.js.map" />
+    <Content Include="highchart\modules\oldie-polyfills.js.map" />
+    <Content Include="highchart\modules\oldie.js.map" />
+    <Content Include="highchart\modules\organization.js.map" />
+    <Content Include="highchart\modules\overlapping-datalabels.js.map" />
+    <Content Include="highchart\modules\parallel-coordinates.js.map" />
+    <Content Include="highchart\modules\pareto.js.map" />
+    <Content Include="highchart\modules\pathfinder.js.map" />
+    <Content Include="highchart\modules\pattern-fill.js.map" />
+    <Content Include="highchart\modules\price-indicator.js.map" />
+    <Content Include="highchart\modules\pyramid3d.js.map" />
+    <Content Include="highchart\modules\sankey.js.map" />
+    <Content Include="highchart\modules\series-label.js.map" />
+    <Content Include="highchart\modules\solid-gauge.js.map" />
+    <Content Include="highchart\modules\sonification.js.map" />
+    <Content Include="highchart\modules\static-scale.js.map" />
+    <Content Include="highchart\modules\stock-tools.js.map" />
+    <Content Include="highchart\modules\stock.js.map" />
+    <Content Include="highchart\modules\streamgraph.js.map" />
+    <Content Include="highchart\modules\sunburst.js.map" />
+    <Content Include="highchart\modules\tilemap.js.map" />
+    <Content Include="highchart\modules\timeline.js.map" />
+    <Content Include="highchart\modules\treegrid.js.map" />
+    <Content Include="highchart\modules\treemap.js.map" />
+    <Content Include="highchart\modules\variable-pie.js.map" />
+    <Content Include="highchart\modules\variwide.js.map" />
+    <Content Include="highchart\modules\vector.js.map" />
+    <Content Include="highchart\modules\venn.js.map" />
+    <Content Include="highchart\modules\windbarb.js.map" />
+    <Content Include="highchart\modules\wordcloud.js.map" />
+    <Content Include="highchart\modules\xrange.js.map" />
+    <Content Include="highchart\themes\avocado.js.map" />
+    <Content Include="highchart\themes\dark-blue.js.map" />
+    <Content Include="highchart\themes\dark-green.js.map" />
+    <Content Include="highchart\themes\dark-unica.js.map" />
+    <Content Include="highchart\themes\gray.js.map" />
+    <Content Include="highchart\themes\grid-light.js.map" />
+    <Content Include="highchart\themes\grid.js.map" />
+    <Content Include="highchart\themes\sand-signika.js.map" />
+    <Content Include="highchart\themes\skies.js.map" />
+    <Content Include="highchart\themes\sunset.js.map" />
+    <Content Include="bootstrap4\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap4\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap4\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap4\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap4\css\bootstrap.css.map" />
+    <Content Include="bootstrap4\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap4\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap4\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap4\js\bootstrap.js.map" />
+    <Content Include="bootstrap4\js\bootstrap.min.js.map" />
+    <Content Include="assets_th1\css\material-dashboard.css.map" />
+    <Content Include="assets_th1\js\material-dashboard.js.map" />
+    <Content Include="assets_th1\scss\material-dashboard.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\bootstrap.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_alert.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_badge.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_button-group.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_buttons.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_card.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_carousel.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_close.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_code.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_dropdown.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_functions.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_grid.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_images.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_input-group.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_list-group.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_media.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_mixins.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_modal.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_nav.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_navbar.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_pagination.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_popover.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_print.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_progress.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_reboot.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_root.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_tables.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_tooltip.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_transitions.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_type.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_utilities.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\bootstrap\scss\_variables.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\cards\_card-plain.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\cards\_card-profile.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\cards\_card-stats.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_alert.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_animations.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_breakpoints.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_buttons.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_chartist.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_colored-shadows.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_drawer.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_hover.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_layout.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_navbar-colors.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_navs.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_sidebar-color.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_transparency.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_type.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_utilities.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_variables.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\plugins\_animate.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\plugins\_chartist.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\plugins\_perfect-scrollbar.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_body.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_bootstrap-material-design-base.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_bootstrap-material-design.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_brand.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_buttons.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_card.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_code.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_colors-map.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_colors.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_custom-forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_drawer.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_dropdown.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_layout.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_list-group.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_menu.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_modals.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_nav.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_pagination.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_shadow.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_snackbar.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_spacing.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_state.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_tables.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_tooltip.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\variables\_type.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_alerts.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_buttons.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_cards.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_checkboxes.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_core-bootstrap.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_dropdown.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_example-pages.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_fixed-plugin.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_footers.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_forms.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_headers.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_images.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_info-areas.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_input-group.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_misc.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_mixins.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_navbar.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_popover.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_popups.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_radios.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_responsive.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_ripples.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_sidebar-and-main-panel.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_social-buttons.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_tables.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_tabs.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_togglebutton.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_tooltip.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_type.scss" />
+    <Content Include="assets_th1\scss\material-dashboard\_variables.scss" />
+    <Content Include="Files\RN10641 High - Copy.xlsb" />
+    <Content Include="Files\RN10641 High.xlsb" />
+    <Content Include="Files\RN10698 12-09-19 - Copy.xlsx" />
+    <Content Include="Files\RN10698 17-09-19.xlsb" />
+    <Content Include="Files\RN10698 17-09-19.xlsx" />
+    <Content Include="Files\RN10698 20-09-19.xlsb" />
+    <Content Include="Files\RN10698 23-09-19.xlsb" />
+    <Content Include="Files\RN10698 24-09-19.xlsb" />
+    <Content Include="Files\RN10698 25-09-19.xlsb" />
+    <Content Include="Files\RN10698 26-09-19.xlsb" />
+    <Content Include="Files\RN10698 27-09-19.xlsb" />
+    <None Include="Properties\PublishProfiles\CL_TEST.pubxml" />
+    <None Include="Properties\PublishProfiles\TEST.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="PEP_Case_DEBK.aspx" />
+    <Content Include="PEP_Case_DE.aspx" />
+    <Content Include="Scripts\icon.css" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\materialize.min.css" />
+    <Content Include="TestDashboard.aspx" />
+    <Content Include="UserManagement.aspx" />
+    <Content Include="Deleted\DEL_UserManagement.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Deleted\WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLDashboardbySegment.aspx.cs">
+      <DependentUpon>CLDashboardbySegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLDashboardbySegment.aspx.designer.cs">
+      <DependentUpon>CLDashboardbySegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\Gmap1.aspx.cs">
+      <DependentUpon>Gmap1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\Gmap1.aspx.designer.cs">
+      <DependentUpon>Gmap1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelAnnexure201912001.aspx.cs">
+      <DependentUpon>ExcelAnnexure201912001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExcelAnnexure201912001.aspx.designer.cs">
+      <DependentUpon>ExcelAnnexure201912001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KYC_HR_PR.aspx.cs">
+      <DependentUpon>KYC_HR_PR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KYC_HR_PR.aspx.designer.cs">
+      <DependentUpon>KYC_HR_PR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\PEPMISDashboard .aspx.cs">
+      <DependentUpon>PEPMISDashboard .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\PEPMISDashboard .aspx.designer.cs">
+      <DependentUpon>PEPMISDashboard .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLBackupData.aspx.cs">
+      <DependentUpon>CLBackupData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLBackupData.aspx.designer.cs">
+      <DependentUpon>CLBackupData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upl_RN10641.aspx.cs">
+      <DependentUpon>Upl_RN10641.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upl_RN10641.aspx.designer.cs">
+      <DependentUpon>Upl_RN10641.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upl_CLCompileFiles.aspx.cs">
+      <DependentUpon>Upl_CLCompileFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upl_CLCompileFiles.aspx.designer.cs">
+      <DependentUpon>Upl_CLCompileFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upl_RN10698.aspx.cs">
+      <DependentUpon>Upl_RN10698.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upl_RN10698.aspx.designer.cs">
+      <DependentUpon>Upl_RN10698.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PEPMIS_RN10698.aspx.cs">
+      <DependentUpon>PEPMIS_RN10698.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PEPMIS_RN10698.aspx.designer.cs">
+      <DependentUpon>PEPMIS_RN10698.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BCUWebService.asmx.cs">
+      <DependentUpon>BCUWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CLDashboardBranch.aspx.cs">
+      <DependentUpon>CLDashboardBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLDashboardBranch.aspx.designer.cs">
+      <DependentUpon>CLDashboardBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLDashboardArea.aspx.cs">
+      <DependentUpon>CLDashboardArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLDashboardArea.aspx.designer.cs">
+      <DependentUpon>CLDashboardArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLDashboardSAM.aspx.cs">
+      <DependentUpon>CLDashboardSAM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLDashboardSAM.aspx.designer.cs">
+      <DependentUpon>CLDashboardSAM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLDashboardRegion.aspx.cs">
+      <DependentUpon>CLDashboardRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLDashboardRegion.aspx.designer.cs">
+      <DependentUpon>CLDashboardRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLDashboard.aspx.cs">
+      <DependentUpon>CLDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLDashboard.aspx.designer.cs">
+      <DependentUpon>CLDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CLOtherCharts.aspx.cs">
+      <DependentUpon>CLOtherCharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CLOtherCharts.aspx.designer.cs">
+      <DependentUpon>CLOtherCharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\CLDashboardbk.aspx.cs">
+      <DependentUpon>CLDashboardbk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\CLDashboardbk.aspx.designer.cs">
+      <DependentUpon>CLDashboardbk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\CLDashboard2.aspx.cs">
+      <DependentUpon>CLDashboard2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\CLDashboard2.aspx.designer.cs">
+      <DependentUpon>CLDashboard2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataTableBootstrap.aspx.cs">
+      <DependentUpon>DataTableBootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataTableBootstrap.aspx.designer.cs">
+      <DependentUpon>DataTableBootstrap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\ClientIp.aspx.cs">
+      <DependentUpon>ClientIp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\ClientIp.aspx.designer.cs">
+      <DependentUpon>ClientIp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\ExcelFileUpload.aspx.cs">
+      <DependentUpon>ExcelFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\ExcelFileUpload.aspx.designer.cs">
+      <DependentUpon>ExcelFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\ExcelRead.aspx.cs">
+      <DependentUpon>ExcelRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\ExcelRead.aspx.designer.cs">
+      <DependentUpon>ExcelRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\HighchartDemo - Copy.aspx.cs">
+      <DependentUpon>HighchartDemo - Copy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\HighchartDemo - Copy.aspx.designer.cs">
+      <DependentUpon>HighchartDemo - Copy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\CLKPISegment.aspx.cs">
+      <DependentUpon>CLKPISegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\CLKPISegment.aspx.designer.cs">
+      <DependentUpon>CLKPISegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\multiselect.aspx.cs">
+      <DependentUpon>multiselect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\multiselect.aspx.designer.cs">
+      <DependentUpon>multiselect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PEP_Case_Report.aspx.cs">
+      <DependentUpon>PEP_Case_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PEP_Case_Report.aspx.designer.cs">
+      <DependentUpon>PEP_Case_Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\Loginold.aspx.cs">
+      <DependentUpon>Loginold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\Loginold.aspx.designer.cs">
+      <DependentUpon>Loginold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage_DE.Master.cs">
+      <DependentUpon>MasterPage_DE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage_DE.Master.designer.cs">
+      <DependentUpon>MasterPage_DE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PEP_Annexure23Summary.aspx.cs">
+      <DependentUpon>PEP_Annexure23Summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PEP_Annexure23Summary.aspx.designer.cs">
+      <DependentUpon>PEP_Annexure23Summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PEP_Annexure23.aspx.cs">
+      <DependentUpon>PEP_Annexure23.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PEP_Annexure23.aspx.designer.cs">
+      <DependentUpon>PEP_Annexure23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ELearningTraining.aspx.cs">
+      <DependentUpon>ELearningTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ELearningTraining.aspx.designer.cs">
+      <DependentUpon>ELearningTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassTraining.aspx.cs">
+      <DependentUpon>ClassTraining.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClassTraining.aspx.designer.cs">
+      <DependentUpon>ClassTraining.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alerts.aspx.cs">
+      <DependentUpon>Alerts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alerts.aspx.designer.cs">
+      <DependentUpon>Alerts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CL_100Depositor.aspx.cs">
+      <DependentUpon>CL_100Depositor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CL_100Depositor.aspx.designer.cs">
+      <DependentUpon>CL_100Depositor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBClass.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PEP_Case_DEBK.aspx.cs">
+      <DependentUpon>PEP_Case_DEBK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PEP_Case_DEBK.aspx.designer.cs">
+      <DependentUpon>PEP_Case_DEBK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PEP_Case_DE.aspx.cs">
+      <DependentUpon>PEP_Case_DE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PEP_Case_DE.aspx.designer.cs">
+      <DependentUpon>PEP_Case_DE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestDashboard.aspx.cs">
+      <DependentUpon>TestDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestDashboard.aspx.designer.cs">
+      <DependentUpon>TestDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\DEL_UserManagement.aspx.cs">
+      <DependentUpon>DEL_UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\DEL_UserManagement.aspx.designer.cs">
+      <DependentUpon>DEL_UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deleted\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deleted\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExcelEntry\" />
+    <Folder Include="UploadFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1248/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

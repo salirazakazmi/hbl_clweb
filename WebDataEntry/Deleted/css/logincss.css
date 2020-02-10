@@ -1,0 +1,128 @@
+﻿
+body {  
+    margin: 0;  
+    font-family: Arial;  
+}  
+
+table {  
+            font-family: arial, sans-serif;  
+            border-collapse: collapse;  
+            width: 70%;  
+      }  
+  
+.button {  
+    background-color: #4CAF50;   
+    border: none;  
+    color: white;  
+    padding: 15px 32px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 14px;  
+    margin: 4px 2px;  
+    cursor: pointer;  
+}  
+  
+.button4 {border-radius: 14px;}  
+  
+.textbox {  
+    height: 50px;  
+    padding: 0 10px;  
+    border: none;  
+    background: lightgray;  
+    background: lightgray;  
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);  
+    font-family: 'Montserrat', sans-serif;  
+    text-indent: 10px;  
+    color: blue;  
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);  
+    font-size: 20px;  
+    width: 470px;  
+}  
+ .textbox:focus {  
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.15);  
+    outline: none;  
+    background: lightgray;  
+    background: lightgray;  
+    outline: solid 1px yellow;  
+}  
+
+
+
+
+ .label {  
+    /*height: 150px;  
+    padding: 0 10px;  
+    border: none;  
+    background: lightgray;  
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);  
+    font-family: 'Montserrat', sans-serif;  
+    text-indent: 10px;  
+    color: blue;  
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);  
+    font-size: 14px;  
+    width: 470px;  */
+    FONT-WEIGHT: normal; FONT-SIZE: 16px; COLOR: blue; FONT-FAMILY: 'Segoe UI'; TEXT-DECORATION: none; text-indent:2px;
+}  
+
+ .label:focus {  
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(255, 255, 255, 0.15);  
+    outline: none;  
+    background: lightgray;  
+    background: lightgray;  
+    outline: solid 1px blue;  
+}  
+
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+ /*'--------------------------'
+     Grid CSS
+     */
+
+
+.Grid {background-color: #fff; margin: 5px 0 10px 0; border: solid 1px #525252; border-collapse:collapse; font-family:'Segoe UI'; color: #474747;}
+
+.Grid td {
+
+      padding: 2px;
+
+      border: solid 1px #c1c1c1; }
+
+.Grid th  {
+
+      padding : 4px 2px;
+
+      color: #fff;
+
+      background: #363670 repeat-x top;
+
+      border-left: solid 1px #525252;
+
+      font-size: 0.9em; }
+
+.Grid .alt {
+
+      background: #fcfcfc url(Images/grid-alt.png) repeat-x top; }
+
+.Grid .pgr {background: #363670 url(Images/grid-pgr.png) repeat-x top; }
+
+.Grid .pgr table { margin: 3px 0; }
+
+.Grid .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }  
+
+.Grid .pgr a { color: Gray; text-decoration: none; }
+
+.Grid .pgr a:hover { color: #000; text-decoration: none; }
+
+   
+/***************************************************/
